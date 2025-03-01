@@ -2,8 +2,8 @@
 <?php
 $serverName = "localhost";
 $database = "acaweb";
-$username = "dbo";  
-$password = "SISCP4102"; 
+$username = "";  
+$password = ""; 
 
 try {
     $conn = new PDO("sqlsrv:server=$serverName;Database=$database", $username, $password);
