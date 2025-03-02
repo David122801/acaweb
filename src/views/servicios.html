@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="servicios.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Restaurante</h1>
+        <div >
+            <nav class="navlinks">
+                <a class="links" href="index.html"><button>Inicio</button></a>
+                <a class="links" href="quienesSomos.html"><button>¿Quienes Somos?</button></a>
+                <a class="links" href="servicios.html"><button>Quiero pedir</button></a>
+                <a class="links" href="contactenos.html"><button>Contactenos</button></a>
+                
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <div class="cards">
+                <div class="card" onclick="openForm('Desayuno')">
+                    <h2>Desayuno</h2>
+                    <img src="/public/img/desayuno.jpg" alt="imagen de desayuno">
+                </div>
+                <div class="card" onclick="openForm('Almuerzo')">
+                    <h2>Almuerzo</h2>
+                    <img src="/public/img/almuerzo.jpg" alt="imagen de almuerzo">
+                </div>
+                <div class="card" onclick="openForm('Cena')">
+                    <h2>Cena</h2>
+                    <img src="/public/img/cena.jpg" alt="imagen de cena">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="orderForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h2>Realizar Pedido</h2>
+            <form id="menuForm">
+                <input type="hidden" id="menuSelected">
+
+                <div class="form-group">
+                    <label for="documentType">Tipo de Documento:</label>
+                    <select id="documentType" required>
+                        <option value="CC">Cédula</option>
+                        <option value="TI">Tarjeta de Identidad</option>
+                        <option value="CE">Cédula de Extranjería</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="documentNumber">Número de Documento:</label>
+                    <input type="text" id="documentNumber" required placeholder="10000000">
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Nombre Completo:</label>
+                    <input type="text" id="fullName" required placeholder="David Benitez">
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Celular:</label>
+                    <input type="text" id="phoneNumber" required placeholder="31944145645">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="tableNumber">Número de Mesa:</label>
+                    <input type="number" id="tableNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="serviceType">Servicio:</label>
+                    <select id="serviceType" required>
+                        <option value="restaurante">Para comer en el restaurante</option>
+                        <option value="llevar">Para llevar</option>
+                    </select>
+                </div>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/public/js/orden.js"></script>
+</body>
+
+</html>

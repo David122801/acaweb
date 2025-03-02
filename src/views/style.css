@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;                
+    background-image: url("/public/img/restaurant.webp");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+}
+header{
+
+    background-color: white;
+    border-radius: 10px;
+    text-align: center ;
+    width: 800px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    
+
+}
+
+
+
+.container{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width:1200px;
+    margin: 20px;
+    border-radius:10px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+}
+
+.navlinks{
+
+    display: flex;
+    flex-direction: column;
+
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.links{
+
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+}
