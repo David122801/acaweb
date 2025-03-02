@@ -87,7 +87,7 @@ header button:hover{
 .card {
     width: 250px;
     height: auto;
-    background-color: white;
+    background-color: rgb(228, 228, 228);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
