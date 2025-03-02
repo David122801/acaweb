@@ -44,52 +44,54 @@
         <div class="modal-content">
             <span class="close" onclick="closeForm()">&times;</span>
             <h2>Realizar Pedido</h2>
-            <form id="menuForm">
-                <input type="hidden" id="menuSelected">
-
+            <form id="menuForm" action="guardar_pedido.php" method="POST">
+                <input type="hidden" id="menuSelected" name="menuSelected">
+            
                 <div class="form-group">
                     <label for="documentType">Tipo de Documento:</label>
-                    <select id="documentType" required>
+                    <select id="documentType" name="documentType" required>
                         <option value="CC">Cédula</option>
                         <option value="TI">Tarjeta de Identidad</option>
                         <option value="CE">Cédula de Extranjería</option>
                     </select>
                 </div>
-
+            
                 <div class="form-group">
                     <label for="documentNumber">Número de Documento:</label>
-                    <input type="text" id="documentNumber" required placeholder="10000000">
+                    <input type="text" id="documentNumber" name="documentNumber" required placeholder="10000000">
                 </div>
-
+            
                 <div class="form-group">
                     <label for="fullName">Nombre Completo:</label>
-                    <input type="text" id="fullName" required placeholder="David Benitez">
+                    <input type="text" id="fullName" name="fullName" required placeholder="David Benitez">
                 </div>
-
+            
                 <div class="form-group">
                     <label for="phoneNumber">Celular:</label>
-                    <input type="text" id="phoneNumber" required placeholder="31944145645">
+                    <input type="text" id="phoneNumber" name="phoneNumber" required placeholder="31944145645">
                 </div>
-
+            
                 <div class="form-group">
                     <label for="email">Correo:</label>
-                    <input type="email" id="email" required placeholder="ejemplo@correo.com">
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
                 </div>
-
+            
                 <div class="form-group">
                     <label for="tableNumber">Número de Mesa:</label>
-                    <input type="number" id="tableNumber" required>
+                    <input type="number" id="tableNumber" name="tableNumber" required>
                 </div>
+            
                 <div class="form-group">
                     <label for="serviceType">Servicio:</label>
-                    <select id="serviceType" required>
+                    <select id="serviceType" name="serviceType" required>
                         <option value="restaurante">Para comer en el restaurante</option>
                         <option value="llevar">Para llevar</option>
                     </select>
                 </div>
-
+            
                 <button type="submit">Enviar Pedido</button>
             </form>
+            
         </div>
     </div>
 
