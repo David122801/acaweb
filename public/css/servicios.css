@@ -6,7 +6,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-image: url("/public/img/restaurant.webp");
+    background-image: url("../img/restaurant.webp");
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat;

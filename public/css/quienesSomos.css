@@ -10,7 +10,7 @@
     justify-content: center;
     z-index: 1000; /* Asegura que esté sobre el carrusel */
     padding: 10px 0;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -20,7 +20,7 @@ body {
     
     height: 100vh;
     margin: 0;
-    background-image: url("/public/img/restaurant.webp");
+    background-image: url("../img/restaurant.webp");
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat;

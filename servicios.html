@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="public/css/servicios.css">
+
+
 
 </head>
 
@@ -26,15 +28,15 @@
             <div class="cards">
                 <div class="card" onclick="openForm('Desayuno')">
                     <h2>Desayuno</h2>
-                    <img src="/public/img/desayuno.jpg" alt="imagen de desayuno">
+                    <img src="public/img/desayuno.jpg" alt="imagen de desayuno">
                 </div>
                 <div class="card" onclick="openForm('Almuerzo')">
                     <h2>Almuerzo</h2>
-                    <img src="/public/img/almuerzo.jpg" alt="imagen de almuerzo">
+                    <img src="public/img/almuerzo.jpg" alt="imagen de almuerzo">
                 </div>
                 <div class="card" onclick="openForm('Cena')">
                     <h2>Cena</h2>
-                    <img src="/public/img/cena.jpg" alt="imagen de cena">
+                    <img src="public/img/cena.jpg" alt="imagen de cena">
                 </div>
             </div>
         </main>
@@ -44,7 +46,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeForm()">&times;</span>
             <h2>Realizar Pedido</h2>
-            <form id="menuForm" action="guardar_pedido.php" method="POST">
+            <form id="menuForm" action="config/database.php" method="POST">
                 <input type="hidden" id="menuSelected" name="menuSelected">
             
                 <div class="form-group">
@@ -96,7 +98,7 @@
     </div>
 
 
-    <script src="/public/js/orden.js"></script>
+    <script src="public/js/orden.js"></script>
 </body>
 
 </html>
